@@ -13,7 +13,7 @@ var love = setInterval(function(){
 },500);
 
 var i = 0;
-var txt1 = "Hi SweetHeart.....!  <<               Now I wan't to say something special to you. <<<                So , Please read everything carefully...!                                                                           > When I saw you for the first time < You seems something Special to me.  <<                  As the days goes < you get closer to me....! <<                           I don't know the reason why your thoughts always resonates inside my mind...!                                                     > Everything about you is always intresting for me...!                     << I am somewhat nervous Because I haven't said these words to anyone and I won't say to anyone in future...!                                                     > I Love my Parents so much than anything else in this world....!                    << Now You are the only person  whom I love equally with my parents....!                                                             >I Love U <SweetHeart.....! |                  <<<< Give me One chance to Prove my Love ...!";
+var txt1 = "<<<<<Hi SweetHeart.....!  <<               Now I wan't to say something special to you. <<<                So , Please hear to my heart carefully...!                                                                           > I still remember the very first day we met ! < from the very moment i saw you, i knew you were the one for me,< the one that i know i want to spend the life with <<                  I promise to grow along with you, < to be willing to face change as we both change,< keeping our relationship alive and exciting..!<<<                           when you need someone to encourage you < i want it to be me. <when you need a helping hand,< i want it to be mine.<<                                I promise to be fair and honest and to always be available for all of you, < whenever and however you need me.              ><<<<< And finally ....., < I promise to love you with all i have to give and all that i am,<i the only way i know how ------  <<<< completely and forever                         >I Love U <SweetHeart.....! |                  <<<< Give me One chance to Prove my Love ...!";
 var speed = 50;
 typeWriter();
 function typeWriter() {
@@ -23,6 +23,10 @@ function typeWriter() {
     else if(txt1.charAt(i)=='>')
       document.getElementById("text1").innerHTML = ''
     else if(txt1.charAt(i)=='|')
+      {
+        $(".bg_heart").css("background-image","url('hih2.jpg')");
+
+      } else if(txt1.charAt(i)=='&')
       {
         $(".bg_heart").css("background-image","url('hih2.jpg')");
 
