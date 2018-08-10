@@ -29,7 +29,7 @@ var love = setInterval(function(){
 },500);
 
 var i = 0;
-var txt1 = "<<<<<Hi SweetHeart.....!  <<               Now I wan't to say something special to you. <<<                So , Please hear to my heart carefully...!                                                                           > <<I still remember the very first day we met ! < from the very moment i saw you, i knew you were the one for me,< the one that i know i want to spend my life with <<<                  I promise to grow along with you, < to be willing to face change as we both change,< keeping our relationship alive and exciting..!<<<                           when you need someone to encourage you < i want it to be me. <when you need a helping hand,< i want it to be mine.<<                                I promise to be fair and honest and <to always be available for all of you, < whenever and however you need me.              ><<<<< And finally ....., < I promise to love you with all i have to give and all that i am,<the only way i know how       <<<< \"completely and forever\"                         >I Love U <SweetHeart.....! |                  <<<< Give me One chance to Prove my Love ...!";
+var txt1 = "<<<<<Hi SweetHeart.....!  <<               Now I wan't to say something special to you. <<<                So , Please hear to my heart carefully...!                                                                           > & <<I still remember the very first day we met ! < from the very moment i saw you, i knew you were the one for me,< the one that i know i want to spend my life with <<<                  I promise to grow along with you, < to be willing to face change as we both change,< keeping our relationship alive and exciting..!<<<                           when you need someone to encourage you < i want it to be me. <when you need a helping hand,< i want it to be mine.<<                                I promise to be fair and honest and <to always be available for all of you, < whenever and however you need me.              ><<<<< And finally ....., < I promise to love you with all i have to give and all that i am,<the only way i know how       <<<< \"completely and forever\"                         >I Love U <SweetHeart.....! |                  <<<< Give me One chance to Prove my Love ...!";
 var speed = 50;
 typeWriter();
 
@@ -43,7 +43,7 @@ function acceptMsg(){
   ref.push(data);
   document.getElementById("text1").innerHTML = ''
   i=0;
-  txt1 = "<<< Thank you, < for bringing joy to my heart, < beauty to my world < and love to my life. <<<<< you are the best thing that ever happened to me << love you forever and ever ";  
+  txt1 = "<<< Thank you, < for bringing joy to my heart, < beauty to my world < and love to my life. <<<<< you are the best thing that ever happened to me << love you forever and ever...!! ";  
   typeWriter();
 }
 
@@ -58,7 +58,7 @@ function rejectMsg(){
   ref.push(data);
   document.getElementById("text1").innerHTML = '';
   i=0;
-  txt1 = "<<< you are gone !! <<But, thank you, < for all these soft,sweet things<you have left behind<in my heart,<in my head,<in my life...   <<<<< sorry ! for messing the things up";
+  txt1 = "<<< you are gone !! <<But, thank you, < for all these soft,sweet things<you have left behind<in my heart,<in my mind,<in my life...   <<<<< sorry ! for messing the things up";
   typeWriter();
 }
 
@@ -75,7 +75,7 @@ function typeWriter() {
         $(".res-heart").css("visibility","visible");
       } else if(txt1.charAt(i)=='&')
       {
-        $(".bg_heart").css("background-image","url('hih2.jpg')");
+        $(".bg_heart").css("background-image","url('bpg3.jpg')");
       }
     else
       document.getElementById("text1").innerHTML += txt1.charAt(i);
