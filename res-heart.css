@@ -1,0 +1,57 @@
+p.res-heart {
+    font-size: 10px;
+    visibility: hidden;
+    float: right;
+    margin-right: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.fa-beat-accept {
+  animation: fa-beat 5s ease infinite;
+  color: green;
+  font-size: 10px;
+}
+
+
+.fa-beat-reject {
+  animation: fa-beat 6s ease infinite;
+  color: red;
+  font-size: 10px;
+
+}
+
+.fa-bolt {
+    top:-1%;
+    left:2%;
+    font-size:10%;
+ }
+
+ 
+@keyframes fa-beat {
+  0% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(1.25);
+  }
+  20% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.25);
+  }
+  50% {
+    transform: scale(1);
+  }
+  55% {
+    transform: scale(1.25);
+  }
+  70% {
+    transform: scale(1);
+  }
+}

